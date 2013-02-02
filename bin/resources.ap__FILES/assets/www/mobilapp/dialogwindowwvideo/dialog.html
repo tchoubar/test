@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dialog - jQuery Mobile: Design and Develop</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head> 
+<body>
+	
+    <div data-role="page">
+    		<div data-role="header"><h1>Dialog Test</h1></div>
+    
+        	<div data-role="content">
+            	<p><a href="#multipage-dialog" data-rel="dialog">Open Multi-page Dialog</a></p>
+            	<p><a href="dialog-window.html" data-rel="dialog">Open External Dialog</a></p>
+        	</div>
+    
+		<div data-role="footer">Copyright</div>
+	</div>
+    
+    
+	<div data-role="page" id="multipage-dialog">
+    		<div data-role="header"><h1>Multi-page dialog window</h1></div>
+    
+        	<div data-role="content">
+            	<p><a href="dialog.html" data-rel="back">OK</a></p>
+        	</div>
+	</div>
+    
+</body>
+</html>

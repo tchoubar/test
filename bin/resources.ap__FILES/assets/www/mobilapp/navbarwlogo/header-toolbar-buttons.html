@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Header Toolbar - jQuery Mobile: Design and Develop</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head> 
+<body>
+	
+    <div data-role="page">
+        <div data-role="header">
+        	<h1>John Doe</h1>
+            <a href="#options-dialog" data-icon="gear" class="ui-btn-right" data-rel="dialog">Edit Profile</a>
+        </div>
+        <div data-role="content">
+            <p>123 E Street</p>
+            <p>Chicago, Il 60622</p>
+        </div>
+	</div>
+    
+    <div data-role="page" id="options-dialog">
+        <div data-role="header">
+            <h1>Edit John Doe</h1>
+            <a href="#" data-icon="check">Save</a>
+        </div>
+        <div data-role="content">
+        	<label for="profile-image">Profile Image</label>
+        	<p><img src="assets/img/profile.png"></p>
+            <input type="file" id="profile-image" name="profile-image">
+            
+            <label for="street-address">Street Address</label>
+            <input type="text" id="street-address" name="street-address" value="123 E Street">
+            
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" value="Chicago">
+            
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" value="Il">
+            
+            <label for="zip-code">Zip Code</label>
+            <input type="text" id="zip-code" name="zip-code" value="60622">
+        </div>
+	</div>
+    
+</body>
+</html>
